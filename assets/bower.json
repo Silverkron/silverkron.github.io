@@ -3,10 +3,10 @@
   "authors": [
     "Siverkron <sciacca.luca93@gmail.com>"
   ],
-  "description": "lucasciacca website",
+  "description": "silverkron website",
   "main": "",
   "license": "MIT",
-  "homepage": "lucasciacca.github.io",
+  "homepage": "https://silverkron.github.io/",
   "private": true,
   "dependencies": {
     "bootstrap": "3.3.7",
