@@ -1,0 +1,60 @@
+// ICONS FONT
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/webfonts/fa-regular-400.eot");
+  src: url("/assets/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+
+/*--------------------------------------------------------------
+  TYPOGRAPHY
+--------------------------------------------------------------*/
+
+body {
+  font-family: @main-font !important;
+  font-weight: @thin;
+  background-color: #333;
+  color: white
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  font-family: @serif-font;
+}
+
+// Media query
+
+@media (max-width: @grid-float-breakpoint) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 10px;
+  }
+}
