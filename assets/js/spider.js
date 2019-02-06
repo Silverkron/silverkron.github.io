@@ -2,7 +2,7 @@ $(document).ready(function () {
     particlesJS("c-canvas", {
         particles: {
             number: {value: 200, density: {enable: true, value_area: 500}},
-            color: {value: "#ffffff"},
+            color: {value: "#333333"},
             shape: {
                 type: "circle",
                 stroke: {width: 0, color: "#000000"},
@@ -27,7 +27,7 @@ $(document).ready(function () {
             line_linked: {
                 enable: true,
                 distance: 110,
-                color: "#ffffff",
+                color: "#333333",
                 opacity: 0.4,
                 width: 1
             },

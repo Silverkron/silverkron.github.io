@@ -89,17 +89,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-### CodeIgniter template
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
-
-# Created by .ignore support plugin (hsz.mobi)
 
 bower_components/
 node_modules/
 application/config/database.php
 application/config/config.php
+package-lock.json
