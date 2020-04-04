@@ -7,4 +7,4 @@ const terminal = new Terminal(terminalDomContainer, [
     WhoamiCommand,
     CatCommand,
 ]);
-terminal.command('help', 100);
+terminal.command('whoami', 100);

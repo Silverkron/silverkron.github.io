@@ -58,6 +58,11 @@ export default class Terminal {
         this.inputElement.value = '';
     }
 
+    clear() {
+        this.historyElement.remove();
+        this.addElementOnHistory('clear');
+    }
+
     execCommand() {
         const command = this.inputElement.value;
 
@@ -69,6 +74,11 @@ export default class Terminal {
     }
 
     findCommand(command, args) {
+        if (command === 'clear') {
+            this.clear();
+            return;
+        }
+
         let commandNotFound = true;
         for (const Command of this.commands) {
             const commandInstance = new Command();
@@ -82,7 +92,7 @@ export default class Terminal {
 
         if (commandNotFound) {
             this.addElementOnHistory(`${command}
-bash: command not found: ${command}`)
+bash: command not found: ${command}`);
         }
     }
 
