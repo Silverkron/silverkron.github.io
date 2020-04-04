@@ -90,8 +90,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-bower_components/
 node_modules/
-application/config/database.php
-application/config/config.php
-package-lock.json
+
+assets/dist/*
+!assets/dist
