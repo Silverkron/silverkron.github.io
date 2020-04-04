@@ -24,7 +24,7 @@ These are my repos:
 How it's made this?
     - Github page
     - Webpack
-find the repo here: https://github.com/Silverkron/silverkron.github.io
+find repo here: https://github.com/Silverkron/silverkron.github.io
         `;
     }
 }

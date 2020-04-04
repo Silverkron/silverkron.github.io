@@ -59,7 +59,7 @@ export default class Terminal {
     }
 
     clear() {
-        this.historyElement.remove();
+        this.historyElement.innerHTML = "";
         this.addElementOnHistory('clear');
     }
 
