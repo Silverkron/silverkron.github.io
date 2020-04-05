@@ -4,7 +4,7 @@ export default class DefaultCommand {
     }
 
     check(commandToCheck) {
-        return this.command === commandToCheck;
+        return commandToCheck ? this.command === commandToCheck.toLowerCase() : false;
     }
 
     setArguments(args) {

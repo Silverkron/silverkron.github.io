@@ -91,6 +91,4 @@ $RECYCLE.BIN/
 *.lnk
 
 node_modules/
-
-assets/dist/*
-!assets/dist
+dist/
