@@ -17,6 +17,7 @@ export default class HelpCommand extends DefaultCommand {
 Welcome to my website. Try to use:
 - help
 - whoami
+- ls
 - cat
         `;
     }

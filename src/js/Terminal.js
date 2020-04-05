@@ -4,6 +4,9 @@ export default class Terminal {
         this.bashUser = 'tony@jarvis:~$';
         this.commands = commands;
 
+        this.history = [];
+        this.historyPosition = 0;
+
         this.initHistoryElement();
         this.initInputRowElement();
     }
@@ -23,11 +26,12 @@ export default class Terminal {
         }
 
         await this.delay(delay);
-        this.execCommand();
+        await this.execCommand();
     }
 
     initHistoryElement() {
         this.historyElement = document.createElement("ul");
+        this.historyElement.setAttribute('for', 'terminal-input');
         this.historyElement.setAttribute('id', 'terminal-history');
         this.containerElement.appendChild(this.historyElement)
     }
@@ -43,12 +47,19 @@ export default class Terminal {
         node.appendChild(this.inputElement);
 
         const instance = this;
-        node.addEventListener('keydown', (e) => {
-            if (e.key !== 'Enter') {
-                return;
+        node.addEventListener('keydown', async (e) => {
+            if (e.key === 'Enter') {
+                await instance.execCommand();
             }
 
-            instance.execCommand();
+            if (e.key === 'ArrowUp') {
+                instance.getUpHistory();
+            }
+
+            if (e.key === 'ArrowDown') {
+                instance.getDownHistory();
+            }
+
         });
         this.containerElement.appendChild(node)
     }
@@ -63,13 +74,34 @@ export default class Terminal {
         this.addElementOnHistory('clear');
     }
 
-    execCommand() {
+    getUpHistory() {
+        if (this.historyPosition >= this.history.length) {
+            return
+        }
+
+        this.inputElement.value = this.history[this.historyPosition];
+        this.historyPosition++;
+    }
+
+    getDownHistory() {
+        if (this.historyPosition <= 0) {
+            return;
+        }
+
+        this.inputElement.value = this.history[this.historyPosition - 2] || '';
+        this.historyPosition--;
+    }
+
+    async execCommand() {
         const command = this.inputElement.value;
+        this.history.unshift(command);
+        this.historyPosition = 0;
 
         // TODO replace split with mor logic
         const splittedCommand = command.split(" ");
 
         this.findCommand(splittedCommand.shift(), splittedCommand);
+        await this.delay(100);
         this.focus();
     }
 
@@ -85,7 +117,7 @@ export default class Terminal {
 
             if (commandInstance.check(command)) {
                 commandInstance.setArguments(args);
-                this.addElementOnHistory(`${command}${commandInstance.exec()}`);
+                this.addElementOnHistory(`${command} ${args.join(' ')}${commandInstance.exec()}`);
                 commandNotFound = false;
             }
         }
