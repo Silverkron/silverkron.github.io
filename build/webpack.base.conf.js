@@ -55,7 +55,7 @@ module.exports = {
     },
     plugins: [
         new CopyWebpackPlugin([
-            {from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
+            // {from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
             // {from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`}
         ]),
         ...PAGES.map(
