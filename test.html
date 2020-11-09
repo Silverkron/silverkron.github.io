@@ -1,4 +1,5 @@
-<div id="st-embeddable" class="st-form st-custom-embed-1928" lang="it">
+<div id="st-embeddable" embed="1" campaign="1" embed-type="1" embed-type-id="1" lang="it"
+     class="st-form st-custom-embed-1">
     <div class="st-form-title">Analisi SEO del tuo sito web</div>
     <div class="st-form-subtitle">Ottieni un Report SEO gratuito</div>
     <div class="st-form-fields">
@@ -6,28 +7,27 @@
         </div>
         <div><input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
         </div>
-        <div><input class="st-form-input" type="text" name="fullname" placeholder="Nome Completo (es. Mario Rossi)">
+        <div><input class="st-form-input" type="text" name="keywords" placeholder="Parola Chiave (es. Casa Milano)">
         </div>
-        <div class="st-form-fields-gdpr"><label class="st-blue text-left"> <input
-                id="st-form-fields-gdpr-checkbox-input" type="checkbox"> <span> Accetta <a target="_blank" href="#">"termini e conditizioni"</a> e <a
-                target="_blank" href="#">"privacy policy"</a> </span> </label></div>
     </div>
-    <div>
+    <div class="st-form-cta-zone">
         <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
-                style="color: rgb(255, 255, 255); background: rgb(128, 0, 64) none repeat scroll 0% 0%;">Analizza
-            gratuitamente
+                style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);"> Analizza
         </button>
     </div>
+    <div class="st-form-powered-by-zone md-caption m-t m-b"> Powered by <a target="_blank"
+                                                                           href="https://www.seotesteronline.com?utm_medium=lead_gen_embed&amp;utm_source=sto_brand&amp;utm_campaign=powered_by">SEO
+        Tester Online</a></div>
     <div id="st-form-message" class="st-form-message"></div>
 </div>
-<script>(function (d, s, id, w, cId, eId) {
-    w._stoEmbed = {campaignId: cId, embedId: eId};
+<script>(function (d, s, id, w, cId, eId, eTId, eT) {
+    w._stoEmbed = {campaignId: cId, embedId: eId, embedTypeId: eTId, embedType: eT};
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) {
         return;
     }
     js = d.createElement(s);
     js.id = id;
-    js.src = "https://stocdn.s3-eu-west-1.amazonaws.com/sto-sdk.min.js?v=993WSYCuYHKv";
+    js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=OLY2GuOQjxSP";
     fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'sto-jssdk', window, 2042, 1928));</script>
+}(document, 'script', 'sto-jssdk', window, 1, 1, 1, "branded"));</script>
