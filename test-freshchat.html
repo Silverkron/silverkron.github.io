@@ -3,18 +3,14 @@
     <title>LS - Test live chat</title>
 </head>
 <body>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/61dd90eaf7cf527e84d1932a/1fp4ns5eh';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
+<script>
+    function initFreshChat() {
+        window.fcWidget.init({
+            token: "ace61f41-6804-4a02-bff2-af2908871426",
+            host: "https://wchat.eu.freshchat.com"
+        });
+    }
+    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.eu.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script>
-<!--End of Tawk.to Script-->
 </body>
 </html>
