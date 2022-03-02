@@ -27,11 +27,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'sto-jssdk', window, 81, 144));
 
-    stoOnSuccess = function (event, data) {
+    window.stoOnSuccess = function (event, data) {
         console.log('STO success', event, data);
     }
 
-    stoOnError = function (code) {
+    window.stoOnError = function (code) {
         console.log('STO error', code);
     }
 </script>
