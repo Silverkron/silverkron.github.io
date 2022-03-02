@@ -12,19 +12,22 @@
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    window.stoOnSuccess = function (event, data) {
-        console.log('STO success', event, data);
-    }
-
-    window.stoOnError = function (code) {
-        console.log('STO error', code);
-    }
-
     (function (d, s, id, w, cId, eId) {
+        function onSuccess(event, data) {
+            console.log('STO success', event, data);
+        }
+
+        function onError(code) {
+            console.log('STO error', code);
+        }
+
         w._stoEmbed = {
             campaignId: cId,
             embedId: eId,
+            onSuccess: onSuccess,
+            onError: onError,
         };
+
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
             return;
