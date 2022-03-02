@@ -26,4 +26,12 @@
         js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=RanHO1jowKOY";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'sto-jssdk', window, 81, 144));
+
+    window.sto.onSuccess = function (event, data) {
+        console.log('STO success', event, data);
+    }
+
+    window.sto.onError = function (code) {
+        console.log('STO error', code);
+    }
 </script>
