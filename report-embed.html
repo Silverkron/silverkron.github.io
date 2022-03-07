@@ -1,6 +1,7 @@
-<div id="st-embeddable" lang="it" class="st-form st-custom-embed-2053">
-    <div class="st-form-title">Analisi SEO del tuo sito web</div>
-    <div class="st-form-subtitle">Ottieni un Report SEO gratuito</div>
+<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-163"
+    style="background: rgb(255, 255, 255); max-width: 350px;">
+    <div class="st-form-title" style="color: rgb(19, 13, 65);">Analisi SEO del tuo sito web</div>
+    <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Ottieni un Report SEO gratuito</div>
     <div class="st-form-fields">
         <div>
             <input class="st-form-input" type="text" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
@@ -8,59 +9,28 @@
         <div>
             <input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
         </div>
-        <div>
-            <select name="normalSelect" id="leadSelect" class="st-form-input" placeholder="Placeholder for normal select">
-                <option value="Value 1">Value 1</option>
-                <option value="Value 2">Value 2</option>
-                <option value="Value 3">Value 3</option>
-                <option value="Value 4">Value 4</option>
-            </select>
-        </div>
-        <div>
-            <select name="multipleSelect" id="leadMultipleSelect" class="st-form-input" placeholder="Placeholder for multiple select" multiple>
-                <option value="Value 1">Value 1</option>
-                <option value="Value 2">Value 2</option>
-                <option value="Value 3">Value 3</option>
-                <option value="Value 4">Value 4</option>
-            </select>
-        </div>
-        <div>
-            <input class="st-form-input" type="hidden" id="leadHiddenField" name="hiddenInput"
-                value="value for hidden field">
-        </div>
-        <div>
-            <textarea class="st-form-input" id="leadTextareaInput" name="textareaInput" id="" cols="30"
-                rows="10"></textarea>
-        </div>
-        <div> <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
-                style="color: rgb(255, 255, 255);">Analizza </button> </div>
-        <div id="st-form-message" class="st-form-message"></div>
+
     </div>
+    <div>
+        <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
+            style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);">Analizza
+        </button>
+    </div>
+
+    <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, cId, eId) {
-        function onSuccess(event, data) {
-            console.log('STO success', event, data);
-        }
-
-        function onError(code) {
-            console.log('STO error', code);
-        }
-
+    (function (d, s, id, w, fId) {
         w._stoEmbed = {
-            campaignId: cId,
-            embedId: eId,
-            onSuccess: onSuccess,
-            onError: onError,
+            formId: fId
         };
-
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
             return;
         }
         js = d.createElement(s);
         js.id = id;
-        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=RanHO1jowKOY";
+        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=2LpntVpzwJfX";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 104, 144));
+    }(document, 'script', 'sto-jssdk', window, 163));
 </script>
