@@ -1,13 +1,120 @@
-<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-163"
+<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-195"
     style="background: rgb(255, 255, 255); max-width: 350px;">
     <div class="st-form-title" style="color: rgb(19, 13, 65);">Analisi SEO del tuo sito web</div>
     <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Ottieni un Report SEO gratuito</div>
     <div class="st-form-fields">
-        <div>
-            <input class="st-form-input" type="text" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
+        <div class="" style="">
+            <label for="website">website</label>
+            <input class="st-form-input ng-not-empty" type="input" name="website"
+                placeholder="URL Sito Web (es. iltuositoweb.com)" required="">
+
+
+
+
+
+
+
+
+
+
+
         </div>
-        <div>
-            <input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
+        <div class="">
+            <label for="Input select">Input select</label>
+
+
+
+
+
+
+            <select name="Input select" placeholder="Placeholder normal select" class="st-form-input" required="">
+                <option value="Pizza margherita">Pizza margherita</option>
+                <option value="Pizza capricciosa">Pizza capricciosa</option>
+                <option value="Pizza norma">Pizza norma</option>
+            </select>
+
+
+
+
+
+        </div>
+        <div class="">
+            <label for="Input textarea">Input textarea</label>
+
+
+
+
+
+
+
+
+
+
+            <textarea class="st-form-input" id="leadTextareaInput" name="Input textarea" rows="3"
+                required=""></textarea>
+
+        </div>
+        <div class="">
+            <label for="Input short text">Input short text</label>
+            <input class="st-form-input ng-not-empty" type="input" name="Input short text"
+                placeholder="Placeholder short text" required="">
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="">
+
+
+
+
+
+            <input class="st-form-input" type="hidden" id="leadHiddenField" name="Input hidden" value="hidden"
+                required="">
+
+
+
+
+
+
+
+        </div>
+        <div class="">
+            <label for="Multi select">Multi select</label>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="selectMultiple">
+                <div class="active"><span>Multi select placeholder<select name="Multi select"
+                            placeholder="Multi select placeholder" class="st-form-input active" multiple="" required="">
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                        </select></span>
+                    <div class="arrow"></div>
+                </div>
+                <ul>
+                    <li data-value="Option 1">Option 1</li>
+                    <li data-value="Option 2">Option 2</li>
+                    <li data-value="Option 3">Option 3</li>
+                </ul>
+            </div>
         </div>
 
     </div>
@@ -20,9 +127,10 @@
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, fId) {
+    (function (d, s, id, w, cId, eId) {
         w._stoEmbed = {
-            formId: fId
+            formId: cId,
+            embedId: eId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -30,7 +138,7 @@
         }
         js = d.createElement(s);
         js.id = id;
-        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=2LpntVpzwJfX";
+        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=5yYBd5c0UnPo";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 163));
+    }(document, 'script', 'sto-jssdk', window, undefined, 195));
 </script>
