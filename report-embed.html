@@ -1,105 +1,30 @@
-<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-195"
-    style="background: rgb(255, 255, 255); max-width: 350px;">
+<div id="st-embeddable" lang="en" class="st-form st-custom-embed-144" style="background: rgb(255, 255, 255);">
     <div class="st-form-title" style="color: rgb(19, 13, 65);">Analisi SEO del tuo sito web</div>
     <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Ottieni un Report SEO gratuito</div>
     <div class="st-form-fields">
         <div>
-            <label for="website">website</label>
-            <input class="st-form-input ng-not-empty" type="input" name="website"
-                placeholder="URL Sito Web (es. iltuositoweb.com)" required="">
-
-
-
-
-
-
-
-
-
-
-
+            <input class="st-form-input" type="text" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
         </div>
         <div>
-            <label for="Input select">Input select</label>
-
-
-
-
-
-
-            <select name="Input select" placeholder="Placeholder normal select" class="st-form-input" required="">
-                <option value="Pizza margherita">Pizza margherita</option>
-                <option value="Pizza capricciosa">Pizza capricciosa</option>
-                <option value="Pizza norma">Pizza norma</option>
-            </select>
-
-
-
-
-
+            <input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
         </div>
         <div>
-            <label for="Input textarea">Input textarea</label>
-
-
-
-
-
-
-
-
-
-
-            <textarea class="st-form-input" id="leadTextareaInput" name="Input textarea" rows="3"
-                required=""></textarea>
-
-        </div>
-        <div>
-            <label for="Input short text">Input short text</label>
-            <input class="st-form-input ng-not-empty" type="input" name="Input short text"
-                placeholder="Placeholder short text" required="">
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-        <div>
-
-
-
-
-
-            <input class="st-form-input" type="hidden" id="leadHiddenField" name="Input hidden" value="hidden"
-                required="">
-
-
-
-
-
-
-
+            <input class="st-form-input" type="text" name="keywords" placeholder="Parola Chiave (es. Casa Milano)">
         </div>
 
     </div>
     <div>
         <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
-            style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);">Analizza
+            style="color: rgb(255, 255, 255);">Analizza
         </button>
     </div>
-
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, fId) {
+    (function (d, s, id, w, cId, eId) {
         w._stoEmbed = {
-            formId: fId
+            campaignId: cId,
+            embedId: eId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -107,7 +32,7 @@
         }
         js = d.createElement(s);
         js.id = id;
-        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=8VRsdCd9dylp";
+        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=9QtoGywXYXvf";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 195));
+    }(document, 'script', 'sto-jssdk', window, 81, 144));
 </script>
