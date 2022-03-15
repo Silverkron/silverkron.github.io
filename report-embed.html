@@ -1,30 +1,28 @@
-<div id="st-embeddable" lang="en" class="st-form st-custom-embed-144" style="background: rgb(255, 255, 255);">
+<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-221"
+    style="background: rgb(255, 255, 255); max-width: 350px;">
     <div class="st-form-title" style="color: rgb(19, 13, 65);">Analisi SEO del tuo sito web</div>
     <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Ottieni un Report SEO gratuito</div>
     <div class="st-form-fields">
-        <div>
-            <input class="st-form-input" type="text" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
-        </div>
-        <div>
-            <input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
-        </div>
-        <div>
-            <input class="st-form-input" type="text" name="keywords" placeholder="Parola Chiave (es. Casa Milano)">
-        </div>
-
+        <div> <label for="Website">Website</label> <input class="st-form-input" type="input" name="Website"
+                placeholder="URL Sito Web (es. iltuositoweb.com)"> </div>
+        <div> <label for="Email">Email</label> <input class="st-form-input" type="email" name="Email"
+                placeholder="Email (es. utente@tuodominio.email)" required=""> </div>
+        <div class="" style=""> <label for="Descrivi la pizza">Descrivi la pizza</label> <textarea class="st-form-input"
+                id="leadTextareaInput" name="Descrivi la pizza"
+                placeholder="Scrivi qui come vuoi sia fatta la tua pizza..." rows="3" required=""></textarea> </div>
+        <div class="st-form-fields-gdpr" style=""> <label class="st-blue text-left"> <input
+                    id="st-form-fields-gdpr-checkbox-input" type="checkbox"> <span>Accetta <a target="_blank"
+                        href="">"termini e condizioni"</a> e <a target="_blank" href="">"privacy policy"</a> </span>
+            </label> </div>
     </div>
-    <div>
-        <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
-            style="color: rgb(255, 255, 255);">Analizza
-        </button>
-    </div>
+    <div> <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
+            style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);">Analizza </button> </div>
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, cId, eId) {
+    (function (d, s, id, w, fId) {
         w._stoEmbed = {
-            campaignId: cId,
-            embedId: eId
+            formId: fId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -32,7 +30,8 @@
         }
         js = d.createElement(s);
         js.id = id;
-        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=9QtoGywXYXvf";
+        js.src =
+            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=Z0JRBlku0qj4";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 81, 144));
+    }(document, 'script', 'sto-jssdk', window, 221));
 </script>

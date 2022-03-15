@@ -1,24 +1,21 @@
-<div id="st-embeddable" lang="en" class="st-form st-custom-embed-27" style="background: rgb(255, 255, 255);">
+<div id="st-embeddable" lang="en" class="st-form m-auto st-custom-embed-222"
+    style="background: rgb(255, 255, 255); max-width: 350px;">
     <div class="st-form-title" style="color: rgb(19, 13, 65);">Ottieni il tuo PDF</div>
     <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Completa i campi per ottenere il file</div>
     <div class="st-form-fields">
-        <div><input class="st-form-input" type="text" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
-        </div>
-        <div><input class="st-form-input" type="email" name="email" placeholder="Email (es. utente@tuodominio.email)">
-        </div>
+        <div> <label for="Website">Website</label> <input class="st-form-input" type="input" name="Website"
+                placeholder="URL Sito Web (es. iltuositoweb.com)"> </div>
+        <div> <label for="Email">Email</label> <input class="st-form-input" type="email" name="Email"
+                placeholder="Email (es. utente@tuodominio.email)" required=""> </div>
     </div>
-    <div>
-        <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
-            style="color: rgb(255, 255, 255);">Ottieni
-        </button>
-    </div>
+    <div> <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
+            style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);">Ottieni </button> </div>
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, cId, eTId) {
+    (function (d, s, id, w, fId) {
         w._stoEmbed = {
-            campaignId: cId,
-            embedTypeId: eTId
+            formId: fId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -26,7 +23,8 @@
         }
         js = d.createElement(s);
         js.id = id;
-        js.src = "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=4T8gnxUde9NF";
+        js.src =
+            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=pemuGQnidmiy";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 92, 3));
+    }(document, 'script', 'sto-jssdk', window, 222));
 </script>
