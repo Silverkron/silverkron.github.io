@@ -18,8 +18,8 @@
         <div class=""> <input class="st-form-input" type="hidden" id="leadHiddenField" name="campo-nascosto"
                 value="hidden"> </div>
         <div class="st-form-fields-gdpr" style=""> <label class="st-blue text-left"> <input
-                    id="st-form-fields-gdpr-checkbox-input" type="checkbox"> <span>Accetta <a target="_blank"
-                        href="">"termini e condizioni"</a> e <a target="_blank" href="">"privacy policy"</a> </span>
+                    id="st-form-fields-gdpr-checkbox-input" type="checkbox"> <span>Accept <a target="_blank"
+                        href="">"terms and conditions"</a> and <a target="_blank" href="">"privacy policy"</a> </span>
             </label> </div>
     </div>
     <div> <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
@@ -30,9 +30,10 @@
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, fId) {
+    (function (d, s, id, w, fId, tId) {
         w._stoEmbed = {
-            formId: fId
+            formId: fId,
+            formTypeId: tId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -41,7 +42,7 @@
         js = d.createElement(s);
         js.id = id;
         js.src =
-            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=X2bhwveE260H";
+            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=zAF3GPk9RUAc";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 220));
+    }(document, 'script', 'sto-jssdk', window, 220, 1));
 </script>

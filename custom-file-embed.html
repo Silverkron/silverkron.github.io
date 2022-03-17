@@ -3,20 +3,20 @@
     <div class="st-form-title" style="color: rgb(19, 13, 65);">Ottieni il tuo PDF</div>
     <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">Completa i campi per ottenere il file</div>
     <div class="st-form-fields">
-        <div class="" style=""> <label for="website" style="color: rgb(19, 13, 65);">Website</label> <input
-                class="st-form-input" type="input" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)">
-        </div>
-        <div class=""> <label for="email" style="color: rgb(19, 13, 65);">Email</label> <input class="st-form-input"
-                type="email" name="email" placeholder="Email (es. utente@tuodominio.email)" required=""> </div>
+        <div> <label for="website" style="color: rgb(19, 13, 65);">Website</label> <input class="st-form-input"
+                type="input" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)"> </div>
+        <div> <label for="email" style="color: rgb(19, 13, 65);">Email</label> <input class="st-form-input" type="email"
+                name="email" placeholder="Email (es. utente@tuodominio.email)" required=""> </div>
     </div>
     <div> <button id="st-form-cta-button" class="st-form-cta-button st-form-button m-b-xs"
             style="color: rgb(255, 255, 255); background: rgb(255, 136, 0);">Ottieni </button> </div>
     <div id="st-form-message" class="st-form-message"></div>
 </div>
 <script>
-    (function (d, s, id, w, fId) {
+    (function (d, s, id, w, fId, tId) {
         w._stoEmbed = {
-            formId: fId
+            formId: fId,
+            formTypeId: tId
         };
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -25,7 +25,7 @@
         js = d.createElement(s);
         js.id = id;
         js.src =
-            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=1NgFDn9SXXiu";
+            "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=7B07FSKSwq4Y";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'sto-jssdk', window, 222));
+    }(document, 'script', 'sto-jssdk', window, 222, 3));
 </script>
