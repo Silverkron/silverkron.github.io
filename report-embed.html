@@ -3,8 +3,9 @@
         <div class="st-form-title" style="color: rgb(209, 209, 209);">DROGA GRATIS</div>
         <div class="st-form-subtitle" style="color: rgb(89, 102, 121);">MDMA</div>
         <div class="st-form-fields">
-                <div class="" style=""> <label for="pizza" style="color: rgb(209, 209, 209);"> Che pizza vuoi? </label>
-                        <select name="pizza" placeholder="Scegli la tua pizza" class="st-form-input">
+                <div class="" style=""> <label for="pizza" style="color: rgb(209, 209, 209);"> Che pizza vuoi? <span
+                                        class="st-form-field--required" style="">*</span> </label> <select name="pizza"
+                                placeholder="Scegli la tua pizza" class="st-form-input" required="" style="">
                                 <option value="Margherita">Margherita</option>
                                 <option value="Biancaneve">Biancaneve</option>
                                 <option value="Norma">Norma</option>
@@ -13,17 +14,17 @@
                                 <option value="Parmigiana">Parmigiana</option>
                                 <option value="Tedesca">Tedesca</option>
                         </select> </div>
-                <div> <label for="email" style="color: rgb(209, 209, 209);"> Email <span
+                <div class=""> <label for="email" style="color: rgb(209, 209, 209);"> Email <span
                                         class="st-form-field--required">*</span> </label> <input class="st-form-input"
                                 type="email" name="email" placeholder="Your Email" required=""> </div>
-                <div> <label for="website" style="color: rgb(209, 209, 209);"> Website <span
+                <div class=""> <label for="website" style="color: rgb(209, 209, 209);"> Website <span
                                         class="st-form-field--required">*</span> </label> <input class="st-form-input"
                                 type="url" name="website" placeholder="URL Sito Web (es. iltuositoweb.com)" required="">
                 </div>
-                <div> <label for="descrivi-la pizza" style="color: rgb(209, 209, 209);"> Descrivi la pizza </label>
-                        <textarea class="st-form-input" id="leadTextareaInput" name="descrivi-la pizza"
+                <div class=""> <label for="descrivi-la pizza" style="color: rgb(209, 209, 209);"> Descrivi la pizza
+                        </label> <textarea class="st-form-input" id="leadTextareaInput" name="descrivi-la pizza"
                                 placeholder="Scrivi qui come vuoi sia fatta la tua pizza..." rows="3"></textarea> </div>
-                <div class="st-form-fields-gdpr"> <label class="st-blue text-left"> <input
+                <div class="st-form-fields-gdpr" style=""> <label class="st-blue text-left"> <input
                                         id="st-form-fields-gdpr-checkbox-input" type="checkbox"> <span
                                         style="color: rgb(209, 209, 209);"> Accetta <a target="_blank" href=""
                                                 class="f-w-400" style="color: rgb(209, 209, 209);">termini e
@@ -48,7 +49,7 @@
                 js = d.createElement(s);
                 js.id = id;
                 js.src =
-                "http://localhost:8080/app/modules/leadgeneration/sdk/sto-sdk.js?v=jVFN60Tysw9g";
+                "https://suite-dev.seotesteronline.com/app/modules/leadgeneration/sdk/dist/sto-sdk.min.js?v=rYHlJcKSSxqF";
                 fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'sto-jssdk', window, 221, 2));
 </script>
