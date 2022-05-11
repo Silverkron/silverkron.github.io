@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>LS - Test live chat</title>
+</head>
+
+<body>
+    <div id="embedded_messenger">
+        <div id="widget-launcher"></div>
+        <iframe id="tactful_client" src="https://store.beta.tactful.ai/chatChannel.html"></iframe>
+    </div>
+    <script src="https://store.beta.tactful.ai/embed/embed.js"></script>
+    <link rel="stylesheet" href="https://store.beta.tactful.ai/webchat/css/embed.css" />
+    <script>
+        var profile = "seotesteronline";
+        var token = "d78b2b3ef006f007667c0b2ceaaaf6810f4f016a";
+        var channelId = "1175";
+        Tactful.start({
+            profile: profile,
+            token: token,
+            channelId: channelId
+        });
+    </script>
+
+</body>
+
+</html>
