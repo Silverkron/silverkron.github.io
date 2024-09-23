@@ -1,36 +1,40 @@
-# Hi! I am Luca Sciacca and this is my personal website's repo
+# Hi! I'm Luca Sciacca, and this is the repository for my personal website
 
-I used only html and css with a little bit of Webpack
+This project was built using HTML and CSS with a bit of Webpack for bundling.
 
-## How to start locally
+## How to Run Locally
 
 ### Prerequisites
-Before installing, [download and install Node.js](https://nodejs.org/en/download/). I suggest you to use [nvm](https://github.com/nvm-sh/nvm).
+Before starting, make sure to [download and install Node.js](https://nodejs.org/en/download/). I recommend using [nvm](https://github.com/nvm-sh/nvm) to manage Node versions.
 
-### Installing
-Clone this repository and use `develop` branch.
+### Installation
+Clone this repository and switch to the `develop` branch.
 
-To install all packages use [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+To install all necessary packages, run the following command:
 
 ```bash
 $ npm install
 ```
 
-### Start 
-Run the local server with `npm run dev`
+### Starting the Project
+To start the local development server, run:
 
-## Versioning
+```bash
+$ npm run dev
+```
 
-To manage git workflow use [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+## Version Control
 
-## Authors
+This project follows the [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow for managing branches and releases.
 
-* **Luca Sciacca** - *Maintainer*
+## Author
+
+* **Luca Sciacca** - *Project Maintainer*
 
 ## Acknowledgments
 
-* [ES6](http://es6-features.org/)
-* [Clean code js](https://github.com/ryanmcdermott/clean-code-javascript)
-* [Conventional commit](https://www.conventionalcommits.org/)
+* [ES6 Features](http://es6-features.org/)
+* [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
+* [Conventional Commits](https://www.conventionalcommits.org/)
 
-That's all! Please, send me any message to improve this repo 💪🏻
+That’s it! Feel free to reach out with any suggestions to improve this repository 💪🏻
