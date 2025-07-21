@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.lucasciacca.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Allow all search engines to access the site
+# No restrictions on specific paths
