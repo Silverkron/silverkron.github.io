@@ -34,20 +34,62 @@
     <meta property="og:image" content="{{ .Site.Params.hero.hero__image | absURL }}">{{ else }}
     <meta property="og:image" content="{{ .Params.Image | absURL }}">{{ end }}
 
-    <!-- Preconnect ai domini Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- Preload -->
-    <link rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;500;700&display=swap"
-          as="style">
-    <link rel="preload" href="https://www.lucasciacca.com/images/me.webp" as="image" type="image/webp"
-          fetchpriority="high"/>
+    <link rel="preload" href="https://www.lucasciacca.com/images/me.webp" as="image" type="image/webp" fetchpriority="high"/>
+
+    {{- $font700 := resources.Get "fonts/darkergrotesque-700.woff2" -}}
+    {{- $font800 := resources.Get "fonts/darkergrotesque-800.woff2" -}}
+    {{- $fontinter400 := resources.Get "fonts/inter-400.woff2" -}}
+    {{- $fontinter500 := resources.Get "fonts/inter-500.woff2" -}}
+    {{- $fontinter700 := resources.Get "fonts/inter-700.woff2" -}}
+
+    <link rel="preload" href="{{ $font800.RelPermalink }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ $fontinter400.RelPermalink }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        @font-face {
+            font-family: 'Darker Grotesque';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('{{ $font700.RelPermalink }}') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Darker Grotesque';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url('{{ $font800.RelPermalink }}') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('{{ $fontinter400.RelPermalink }}') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url('{{ $fontinter500.RelPermalink }}') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('{{ $fontinter700.RelPermalink }}') format('woff2');
+        }
+    </style>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&family=Inter:wght@400;500;700&display=swap"
-          rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
     <script>
