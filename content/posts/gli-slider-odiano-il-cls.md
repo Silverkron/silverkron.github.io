@@ -30,7 +30,7 @@ In queste settimane ho "combattuto" spesso con siti web che proponevano slider a
 
 ## Come funziona
 
-![esempio-di-ottimizzazione-cls.gif](images/gli-slider-odiano-il-tuo-punteggio-cls/esempio-di-ottimizzazione-cls.gif)
+![esempio-di-ottimizzazione-cls.gif](/images/gli-slider-odiano-il-tuo-punteggio-cls/esempio-di-ottimizzazione-cls.gif)
 
 1. Apri la console (`F12`) sulla pagina da analizzare.
 2. Incolla lo script seguente.
