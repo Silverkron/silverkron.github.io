@@ -1,6 +1,6 @@
 ---
 title: Basic Auth con Cloudflare Worker 
-date: 2024-13-11 22:01:35 +0300
+date: 2024-12-11 22:01:35 +0300
 subtitle: Worker
 image: '/images/cloudflare-worker-basic-auth/copertina.webp'
 ---
